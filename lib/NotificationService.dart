@@ -48,7 +48,6 @@ class NotificationService {
           priority: Priority.max,
           icon: '@drawable/ic_notification',
           playSound: true, //播放聲音
-          //TODO: sound:,
         ),
       ),
     );
@@ -56,4 +55,4 @@ class NotificationService {
 }
 
 //需要用到通知時, 用這串函式就能用!
-NotificationService().showNotification(1, "居家防災警報", warningText); //通知(ID, 標題, 內容)
+NotificationService().showNotification(1, "標題", "內容"); //通知(ID, 標題, 內容)

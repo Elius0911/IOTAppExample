@@ -53,7 +53,7 @@ void onStart(ServiceInstance service) async {
   //重複執行
   Timer.periodic(Duration(seconds: periodTime), (timer) async {
     if (service is AndroidServiceInstance) {
-      jsonDecode_and_alarm(); //偵測&通知
+      //要重複執行的東西
     }
   });
 }
