@@ -1,7 +1,7 @@
 import 'dart:async'; //異步處理
 import 'dart:convert'; //json 轉換
 
-import 'main.dart'
+import 'main.dart';
 import 'package:http/http.dart' as http;
 
 //json 解析
@@ -22,6 +22,5 @@ Future jsonImport() async {
 
   if (value == 1) {
     textImport = decode['Text'];
-    }
+  }
 }
-

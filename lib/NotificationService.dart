@@ -1,8 +1,6 @@
 //引用來源：https://github.com/Bytx-youtube/flutterlocalnotifications/blob/main/lib/notificationservice.dart
-//Elius簡化版：https://github.com/Elius0911/FireIOTapp/blob/main/lib/NotificationService.dart
 
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-
 
 class NotificationService {
   static final NotificationService _notificationService =
@@ -47,12 +45,12 @@ class NotificationService {
           importance: Importance.max,
           priority: Priority.max,
           icon: '@drawable/ic_notification',
-          playSound: true, //播放聲音
+          playSound: true, //TODO: 播放聲音
         ),
       ),
     );
   }
 }
 
-//需要用到通知時, 用這串函式就能用!
-NotificationService().showNotification(1, "標題", "內容"); //通知(ID, 標題, 內容)
+//TODO: 需要用到通知時, 用這串函式就能用!
+//NotificationService().showNotification(1, "標題", "內容");

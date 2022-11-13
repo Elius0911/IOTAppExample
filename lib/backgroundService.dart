@@ -1,5 +1,4 @@
 //引用來源：https://pub.dev/packages/flutter_background_service/example
-//Elius簡化版：https://github.com/Elius0911/FireIOTapp/blob/main/lib/backgroundService.dart
 
 import 'dart:async';
 import 'dart:ui';
@@ -8,8 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_background_service/flutter_background_service.dart';
 import 'package:flutter_background_service_android/flutter_background_service_android.dart';
 
-import 'json_and_Notification.dart';
-
+int periodTime = 2; //TODO: 55行 重複執行的間隔時間
 
 Future<void> initializeService() async {
   final service = FlutterBackgroundService();
@@ -53,7 +51,7 @@ void onStart(ServiceInstance service) async {
   //重複執行
   Timer.periodic(Duration(seconds: periodTime), (timer) async {
     if (service is AndroidServiceInstance) {
-      //要重複執行的東西
+      //TODO: 要重複執行的東西
     }
   });
 }

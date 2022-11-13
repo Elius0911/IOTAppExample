@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:flutter_background_service/flutter_background_service.dart';
-
 import 'backgroundService.dart';
 
 String url = 'http://192.168.0.87/'; //TODO: 設定主機的IP
@@ -42,4 +41,3 @@ class WebViewApp extends StatelessWidget {
     );
   }
 }
-
